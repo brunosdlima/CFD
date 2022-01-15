@@ -1,0 +1,7 @@
+The motion of small spherical particles in a cellular flow field (MatLab file)
+
+This routine simulates the behavior of particles with different Stokes numbers in the flow defined in the article by (Maxey, 1987). 
+To this end, three different directories are created where images are saved and a sixty-second video with the movement of particles for each Stokes number is generated. 
+This procedure is automated by the script.
+To implement the numerical solution in Matlab software, Euler's method was used to solve the differential equations.
+This same methodology was used in a work similar to that of (Dapena, 2015)
