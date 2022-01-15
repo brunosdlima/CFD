@@ -1,0 +1,5 @@
+This folder contains the necessary files to analyze the images generated with high speed camera.
+The java script contained here analyzes and generates text file containing the main data. ImageJ was used to generate the data.
+The images included here are used as example.
+
+This work is under development and is not already published, as soon as it beomes public it will be posted here
