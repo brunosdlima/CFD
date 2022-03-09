@@ -4,3 +4,5 @@ Make sure that there are in the chosen folder the following files: "zbackground.
 Considering the alphabetical order your sequence of images should come before "zbackground.bmp" and "zstandard.bmp".
 It must not contain any other files. After printing results as txt files you need to remove it from the folder in order to run the script again.
 Pay attention on setting the values of brightness and colour as well as threshold.
+
+Math Functions is only available in ImageJ 1.52u or later.
