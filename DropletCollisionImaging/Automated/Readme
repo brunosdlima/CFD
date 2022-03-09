@@ -1,1 +1,2 @@
-This folder contains an one click routine that analyses themain parameters os the colliding droplets.
+This folder contains an one click routine that analyses the main parameters os the colliding droplets.
+To run the simulation it is necessary to select a folder containing folder with side and front view of high speed cameras.
