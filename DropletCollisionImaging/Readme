@@ -1,4 +1,6 @@
 This folder contains the necessary files to analyze the images generated with high speed camera.
-The java script contained here analyzes and generates text file containing the main data. Fiji(ImageJ) was used to generate the data.
+The java script contained here analyzes and generates text file containing the main admensional as well as generates images with average data. Fiji(ImageJ) was used to generate the data.
 The images included here are used as example. 
-The folder containing the images also contains a routine combining the first two and all the process to calculate the main parameters of the droplets collision with one click.
+The folder containing the images also contains a routine that calculates the images. You must select the correct folder after running this routines.
+A separeted folder called Automated combines the other two routines.
+ImageJ 1.52u or later is necessary to run Math.pow.
