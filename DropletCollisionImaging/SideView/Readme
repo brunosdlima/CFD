@@ -1,0 +1,5 @@
+This script calculates the average of the film profile in a chosen folder.
+Make sure to change the values of fps and pixel size in the section Input variables. Also change the tunning variables if necessary.
+Make sure that there are in the chosen folder the following files: "zbackground.bmp" and "zstandard.bmp". This files are used to calculate the reflection of the plate.
+Considering the alphabetical order your sequence of images should come before "zbackground.bmp" and "zstandard.bmp".
+It must not contain any other files. After printing results as txt files you need to remove it from the folder in order to run the script again.
