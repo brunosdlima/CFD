@@ -1,3 +1,4 @@
 This folder contains the necessary files to analyze the images generated with high speed camera.
 The java script contained here analyzes and generates text file containing the main data. Fiji(ImageJ) was used to generate the data.
-The images included here are used as example.
+The images included here are used as example. 
+The folder containing the images also contains a routine combining the first two and all the process to calculate the main parameters of the droplets collision with one click.
