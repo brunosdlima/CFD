@@ -1,5 +1,5 @@
-%Vorticidade
-function [w]=Passo5(u,v,dy,dx,Nx,Ny)
+%Vorticity
+function [w]=Step5(u,v,dy,dx,Nx,Ny)
 
 w=sparse(zeros(Nx*Ny,1));
 for i=2:(Ny-2)

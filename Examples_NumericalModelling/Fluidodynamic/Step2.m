@@ -1,12 +1,6 @@
-%-------- TRABALHO DA DISCIPLINA "Metodos Computacionais" - UFU
+%Pressure correction - p_est calculation
 
-%-------- Fluidodinâmica  
-%-------- Alunos: Beatriz Granado, Bruno Lima, Deborah Domingos, Fábio Radicchi, José Aguiar
-%-------- Professor: Solidonio Carvalho
-
-%Correção da pressão - cálculo de p_est
-
-function [p_est]=Passo2(p_est,u_est,v_est,p,dx,u,v,dy,dt,rho,visc,Nx,Ny)
+function [p_est]=Step2(p_est,u_est,v_est,p,dx,u,v,dy,dt,rho,visc,Nx,Ny)
 
 A=sparse(zeros(Nx*Ny,Nx*Ny));
 B=sparse(zeros(Nx*Ny,1));
@@ -24,7 +18,7 @@ for i=2:(Ny-2)
         A(k,k-Nx)=1/(dy^2);
         B(k,1)=((rho/dt)*((u_est(k+1,1)-u_est(k,1))/dx + (v_est(k+Nx,1)-v_est(k,1))/dy));
         
-        %CC lateral inferior
+        %BC bottom side
         if i==2 && j>=2 && j<=(Nx-1)   
            A(k,k)=A(k,k)-1/(dy^2);
            A(k,k-Nx)=0;

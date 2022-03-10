@@ -1,11 +1,5 @@
-%-------- TRABALHO DA DISCIPLINA "Metodos Computacionais" - UFU
-
-%-------- Fluidodinâmica  
-%-------- Alunos: Beatriz Granado, Bruno Lima, Deborah Domingos, Fábio Radicchi, José Aguiar
-%-------- Professor: Solidonio Carvalho
-
-%Equações para u_est
-function [u_est, v_est]  = Passo1_1(ka,u_est,v_est,p,dx,u,v,dy,dt,rho,visc,Nx,Ny)
+%Equations for u_est
+function [u_est, v_est]  = Step1(ka,u_est,v_est,p,dx,u,v,dy,dt,rho,visc,Nx,Ny)
 
 u_est=u;
 v_est=v;
@@ -82,7 +76,7 @@ for i=2:(Ny-1)
 if   k~=ka
 
 
-%Equações para v_est
+%Equations for v_est
 
 dpdy=(p(k,1)-p(k-Nx,1))/dy;
 

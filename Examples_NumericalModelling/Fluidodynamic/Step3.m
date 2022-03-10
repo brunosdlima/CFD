@@ -1,12 +1,6 @@
-%-------- TRABALHO DA DISCIPLINA "Metodos Computacionais" - UFU
+%Calculation of u, v e p
 
-%-------- Fluidodinâmica  
-%-------- Alunos: Beatriz Granado, Bruno Lima, Deborah Domingos, Fábio Radicchi, José Aguiar
-%-------- Professor: Solidonio Carvalho
-
-%Cálculo de u, v e p
-
-function [u, v, p]=Passo3(ka,p,u,v,Nx,Ny,dy,dx,p_est,u_est,v_est,dt,rho)
+function [u, v, p]=Step3(ka,p,u,v,Nx,Ny,dy,dx,p_est,u_est,v_est,dt,rho)
 
 for i=2:(Ny-1)
     for j=3:(Nx-1)
@@ -25,7 +19,6 @@ end
 
 end
     
-
 
 
 for i=2:(Ny-1)
@@ -48,9 +41,6 @@ end
     end
     
 end
-
-
-
 
 end
 
