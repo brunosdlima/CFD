@@ -1,0 +1,44 @@
+The considered problem is the temperature distribution due to a heating torch over a plate.
+The numerical model is able to simulate the temperature distribution inside the plate using the finite difference method.
+For boundary conditions ghost cells are used.
+For the numerical solution, the finite difference method was used.
+
+The main considerations are:
+2D and transient model;
+Mobile heat source, with a constant velocity (v[m/s]) of the nozzle in the x-axis direction;
+Fluid dynamics and phase change effects are disregarded;
+Convective thermal exchanges.
+
+"matrixa.m" matrix to define type of cell.
+"matrixb.m" matrix for the source terms.
+Running "Welding.m" in the presence of "matrixa.m" and "matrixb.m",will generate the "Temperature.txt" file necessary to run the "Golden_section_method.m" 
+(which also needs "matrixa.m" and "matrixb.m" to run) case
+
+The "Welding.m" generates three images:
+1 - The temperature distribution in the metal sheet.
+2 - Mesh convergence for cooling
+3 - Mesh convergence for heating
+
+For the mesh convergence three points were tested and data are aquired on them for each time that the simulations run.
+
+The golden section algorithm:
+A white Gaussian noise was added to the temperatures analyzed for the mesh convergence test. 
+The objective is to simulate a real extraction of data through thermocouples installed on a plate subjected to a welding process 
+and verify if the model is able to calculate the heat flux from the sensor data.
+To test the developed routine, a range was defined for the heat flux values to analyze the temperature response. For each flux value, 
+this temperature is then compared with the one subjected to the white Gaussian noise. Then, a new heat flux value is entered, according 
+to an optimization technique, and the temperature response is compared again with that submitted to white noise.
+This test was performed following different optimization criteria to obtain the heat flux corresponding to the noisy temperature. 
+The comparison of temperature data is performed by means of the sum of the squares of the temperature differences between the simulated 
+temperature and the temperature with noise, which would correspond to that obtained experimentally.
+The technique used was the search for the golden section. It is a technique for finding maxima or minima of a function by narrowing the 
+range between values within which there is a maximum and minimum value. The name of the technique comes from the fact that it maintains 
+the golden ratio between the two previous values tested and the new point to be tested.
+
+For analysis through the golden section, an interval from -10 to -108 was established for the test of the golden section technique. The results are shown in figure 3
+
+The "Golden_section_method.m" generates four images:
+1 - Temperature distribution on the plate
+2 - Mesh test for cooling
+3 - Heat flux in the reverse analysis by the golden section search technique
+4 - Mesh test for heating
