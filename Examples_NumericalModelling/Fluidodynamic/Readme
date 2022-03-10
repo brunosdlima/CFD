@@ -1,0 +1,30 @@
+This Matlab script solves the Navier Stokes equations in two dimensions for a bluff body imersed on a chanel.
+The main simplifications are as follows:
+Fully developed flow;
+Incompressible Fluid;
+Two-dimensional flow;
+Conservation of mass in the channel (x axis);
+Symmetry in the upper and lower boundaries;
+Velocity entrance on the left and outelt on the right;
+The fluid is initially quiescent;
+Isothermal flow.
+
+For discretization, the displaced mesh method will be used.
+
+To determine the time evolution of the pressure field, the Fractional Step Method will be used, which consists of a non-iterative way to solve the Navier-Stokes equations. 
+In this method, the equations of motion are solved for the velocity components and the Poisson equation is solved for the pressure.
+The algorithm is divided in five step:
+1 - Estimate the velocities u and v;
+2 - Estimate the pressure;
+3 - Correct the estimated velocities and pressure;
+4 - Check conservation of mass;
+5 - Advance to the next time step.
+
+The main results are summarized in five figures:
+1 - Velocity field in x direction
+2 - Velocity field in y direction
+3 - Pressure field
+4 - Vorticity
+5 - Velocity vector and streamlines
+
+A message pops up on the screen saying that the mass is still not conserved, meaning that the algorithm will keep runing.
