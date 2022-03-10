@@ -1,0 +1,5 @@
+This folder contains three examples of numerical modelling solved cases.
+
+The file "Chord.m" solves the equations for a double-pinned string, presenting results at two monitoring points.
+The file "Fluidynamics.m" solves the Navier Stokes equations for a two dimensional bluff body.
+The file "Welding.m" solves the heat equations for a two dimensional plate.
