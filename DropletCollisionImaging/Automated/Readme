@@ -1,2 +1,5 @@
 This folder contains an one click routine that analyses the main parameters os the colliding droplets.
-To run the simulation it is necessary to select a folder containing folder with side and front view of high speed cameras.
+To run the simulation it is necessary to select a folder containing side and front view of high speed cameras. 
+An example is given as the folder "Choose this folder".
+Use the script "run_all_ready.ijm" to run the cases.
+the script "run_all_template.ijm" is a template that needs to be adjusted by replacing the coments sections such as "Insert here script to run side scripts" with the script presented in in the subfolder "".
