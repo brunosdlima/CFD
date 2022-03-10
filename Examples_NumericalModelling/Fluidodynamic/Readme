@@ -20,7 +20,7 @@ The algorithm is divided in five step:
 4 - Check conservation of mass;
 5 - Advance to the next time step.
 
-The main results are summarized in five figures (Running "Fluiddynamic.m" in the same folder as "Step1.m", "Step2.m" ...):
+The main results are summarized in five figures (Running "Fluidynamic.m" in the same folder as "Step1.m", "Step2.m" ...):
 1 - Velocity field in x direction
 2 - Velocity field in y direction
 3 - Pressure field
